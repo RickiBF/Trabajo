@@ -1,0 +1,48 @@
+package Trabajo;
+
+public class Arquitecto {
+    public String nombre;
+
+    public String genero;
+
+    public String experiencia;
+
+    public Arquitecto(String nom, String gen, String ex)
+    {
+        establecerNombre(nom);
+        establecerGenero(gen);
+        establecerExperiencia(ex);
+    }
+
+  
+    public String obtenerNombre()
+    {
+        return nombre;
+    }
+
+    public void establecerNombre(String nom)
+    {
+        nombre = nom;
+    }
+
+    
+    public String obtenerGenero()
+    {
+        return genero;
+    }
+
+    public void establecerGenero(String gen)
+    {
+        genero=gen;
+    }
+
+  
+    public String obtenerExperiencia()
+    {
+        return experiencia;
+    }
+    public void establecerExperiencia(String ex)
+    {
+        experiencia = ex;
+    }
+}
