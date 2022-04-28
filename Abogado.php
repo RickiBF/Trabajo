@@ -9,9 +9,11 @@ class Abogado
     public $peso = "";
 
     //nombre
-    public function __construct($nom)
+    public function __construct($nom, $movil, $peso)
     {
        $this->establecerNombre();
+       $this->establecerMovil();
+       $this->establecerPeso();
     }
 
     public function obtenerNombre()
@@ -19,16 +21,11 @@ class Abogado
         return $this->nombre;
     }
 
-    public function establecerColor($nom)
+    public function establecerNombre($nom)
     {
         $this->nombre = $nom;
     }
 
-    //movil
-    public function __construct($mov)
-    {
-       $this->establecerMovil();
-    }
 
     public function obtenerMovil()
     {
@@ -40,11 +37,6 @@ class Abogado
         $this->movil = $mov;
     }
 
-    //peso
-    public function __construct($pes)
-    {
-       $this->establecerPeso();
-    }
 
     public function obtenerPeso()
     {
